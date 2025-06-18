@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mr Gusto Cafe</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: url('https://res.cloudinary.com/dwhkjr77b/image/upload/v1749931587/Background_lcttlj.jpg') no-repeat center center fixed; /* ✅ غيّر هنا خلفية الصفحة */
+      background-size: cover;
+      color: #fff;
+      text-align: center;
+      animation: fadeIn 1s ease-in;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .container {
+      max-width: 600px;
+      margin: auto;
+      padding: 40px 20px;
+      backdrop-filter: blur(2px);
+    }
+
+    .logo {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 20px;
+      border: 2px solid #fff;
+    }
+
+    h1 {
+      margin-bottom: 40px;
+      font-size: 1.8rem;
+    }
+
+    .btn {
+      display: block;
+      width: 100%;
+      background: #fff;
+      color: #333;
+      border: none;
+      padding: 15px 0;
+      margin: 10px 0;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.1rem;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      transform: scale(1.03);
+      background: #f0f0f0;
+    }
+
+    .btn i {
+      margin-left: 10px;
+    }
+
+    footer {
+      margin-top: 40px;
+      font-size: 0.8rem;
+      color: #ddd;
+    }
+
+    @media (max-width: 500px) {
+      h1 {
+        font-size: 1.5rem;
+      }
+
+      .btn {
+        font-size: 1rem;
+        padding: 12px 0;
+      }
+    }
+  </style>
+
+  <!-- ✅ أيقونات FontAwesome -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <div class="container">
+    <!-- ✅ غيّر هنا اللوجو -->
+    <img class="logo" src="https://res.cloudinary.com/dwhkjr77b/image/upload/v1749931589/intro_je7mqn.png" alt="Mr Gusto Logo">
+
+    <h1>Welcome to Mr Gusto Cafe</h1>
+
+    <!-- ✅ غيّر الروابط حسب حساباتك -->
+    <a class="btn" href="https://mr-gusto-menu.vercel.app/" target="_blank">
+      Menu <i class="fas fa-mug-hot"></i>
+    </a>
+    <a class="btn" href="https://www.instagram.com/mr.gustocafe?igsh=dTdhcHYxMHNhajAx&utm_source=qr" target="_blank">
+      Instagram <i class="fab fa-instagram"></i>
+    </a>
+    <a class="btn" href="https://www.facebook.com/share/1Lm1UTmyaH/?mibextid=wwXIfr" target="_blank">
+      Facebook <i class="fab fa-facebook"></i>
+    </a>
+    <a class="btn" href="https://wa.me/201091976787" target="_blank">
+      WhatsApp <i class="fab fa-whatsapp"></i>
+    </a>
+    <a class="btn" href="https://www.tiktok.com/@mr.gusto.cafe?_t=ZS-8x2p8Fki67d&_r=1" target="_blank">
+      TikTok <i class="fab fa-tiktok"></i>
+    </a>
+    <a class="btn" href="https://maps.app.goo.gl/g49WRA3p1uoCMuug8" target="_blank">
+      Location <i class="fas fa-map-marker-alt"></i>
+    </a>
+
+    <footer>
+      &copy; 2025 Mr Gusto Cafe
+    </footer>
+  </div>
+
+</body>
+</html>
