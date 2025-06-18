@@ -1,21 +1,25 @@
-body {
+/* 🌍 إعدادات أساسية */
+html, body {
   margin: 0;
+  padding: 0;
+  max-width: 100%;
+  overflow-x: hidden;
   font-family: 'Segoe UI', sans-serif;
-  background: url('https://res.cloudinary.com/dwhkjr77b/image/upload/v1749931587/Background_lcttlj.jpg') no-repeat center center;
+  background: url('https://res.cloudinary.com/dwhkjr77b/image/upload/f_auto,q_70,w_1000/v1749931587/Background_lcttlj.jpg') no-repeat center center;
   background-size: cover;
   color: #fff;
   text-align: center;
   animation: fadeIn 1s ease-in;
   position: relative;
-  overflow-x: hidden;
 }
 
+/* ✅ أنيميشن */
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(20px); }
   to { opacity: 1; transform: translateY(0); }
 }
 
-/* ✅ الحاوية الرئيسية */
+/* ✅ حاوية المحتوى */
 .container {
   max-width: 600px;
   margin: auto;
@@ -63,13 +67,14 @@ h1 {
   margin-left: 10px;
 }
 
+/* ✅ الفوتر */
 footer {
   margin-top: 40px;
   font-size: 0.8rem;
   color: #ddd;
 }
 
-/* ✅ تموجات SVG */
+/* ✅ موجات SVG */
 .background-waves {
   position: fixed;
   top: 0;
@@ -80,7 +85,7 @@ footer {
   pointer-events: none;
 }
 
-/* ✅ كافر زخرفي بخطوط شفافة */
+/* ✅ زخرفة شفافة */
 .pattern-overlay {
   position: fixed;
   top: 0;
@@ -93,11 +98,17 @@ footer {
   pointer-events: none;
 }
 
-/* ✅ موبايل */
-@media (max-width: 500px) {
+/* 📱 تحسين الموبايل */
+@media (max-width: 768px) {
+  body {
+    background-attachment: scroll !important;
+    -webkit-overflow-scrolling: touch;
+  }
+
   h1 {
     font-size: 1.5rem;
   }
+
   .btn {
     font-size: 1rem;
     padding: 12px 0;
