@@ -1,0 +1,84 @@
+/* ✅ الخلفية */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: url('https://res.cloudinary.com/dwhkjr77b/image/upload/v1749931587/Background_lcttlj.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #fff;
+  text-align: center;
+  animation: fadeIn 1s ease-in;
+}
+
+/* ✅ أنيميشن دخول الصفحة */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ✅ الحاوية الرئيسية */
+.container {
+  max-width: 600px;
+  margin: auto;
+  padding: 40px 20px;
+  backdrop-filter: blur(2px);
+}
+
+/* ✅ اللوجو */
+.logo {
+  width: 120px; /* حجم أكبر للوضوح */
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+  border: 2px solid #fff;
+}
+
+/* ✅ العنوان */
+h1 {
+  margin-bottom: 40px;
+  font-size: 1.8rem;
+}
+
+/* ✅ الأزرار */
+.btn {
+  display: block;
+  width: 100%;
+  background: #fff;
+  color: #333;
+  border: none;
+  padding: 15px 0;
+  margin: 10px 0;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  transform: scale(1.03);
+  background: #f0f0f0;
+}
+
+.btn i {
+  margin-left: 10px;
+}
+
+/* ✅ الفوتر */
+footer {
+  margin-top: 40px;
+  font-size: 0.8rem;
+  color: #ddd;
+}
+
+/* ✅ استجابة للموبايل */
+@media (max-width: 500px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .btn {
+    font-size: 1rem;
+    padding: 12px 0;
+  }
+}
