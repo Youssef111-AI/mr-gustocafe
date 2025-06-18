@@ -1,4 +1,3 @@
-/* ✅ الخلفية */
 body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
@@ -7,9 +6,10 @@ body {
   color: #fff;
   text-align: center;
   animation: fadeIn 1s ease-in;
+  position: relative;
+  overflow-x: hidden;
 }
 
-/* ✅ أنيميشن دخول الصفحة */
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(20px); }
   to { opacity: 1; transform: translateY(0); }
@@ -20,12 +20,13 @@ body {
   max-width: 600px;
   margin: auto;
   padding: 40px 20px;
-  backdrop-filter: blur(2px);
+  position: relative;
+  z-index: 2;
 }
 
 /* ✅ اللوجو */
 .logo {
-  width: 120px; /* حجم أكبر للوضوح */
+  width: 120px;
   height: 120px;
   border-radius: 50%;
   object-fit: cover;
@@ -54,43 +55,51 @@ h1 {
   font-size: 1.1rem;
   transition: 0.3s;
 }
-
 .btn:hover {
   transform: scale(1.03);
   background: #f0f0f0;
 }
-
 .btn i {
   margin-left: 10px;
 }
 
-/* ✅ الفوتر */
 footer {
   margin-top: 40px;
   font-size: 0.8rem;
   color: #ddd;
 }
 
-/* ✅ استجابة للموبايل */
+/* ✅ تموجات SVG */
+.background-waves {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* ✅ كافر زخرفي بخطوط شفافة */
+.pattern-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('https://www.transparenttextures.com/patterns/45-degree-fabric-light.png');
+  opacity: 0.2;
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* ✅ موبايل */
 @media (max-width: 500px) {
   h1 {
     font-size: 1.5rem;
   }
-
   .btn {
     font-size: 1rem;
     padding: 12px 0;
   }
 }
-
-.pattern-overlay {
-  position: fixed;
-  top: 0; left: 0;
-  width: 100%;
-  height: 100%;
-  background: url('https://www.transparenttextures.com/patterns/asfalt-dark.png'); /* مثلًا */
-  opacity: 0.2;
-  z-index: 0;
-  pointer-events: none;
-}
-
