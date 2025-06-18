@@ -1,9 +1,10 @@
 /* 🌍 إعدادات أساسية */
 html, body {
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
   margin: 0;
   padding: 0;
-  max-width: 100%;
-  overflow-x: hidden;
   font-family: 'Quicksand', sans-serif;
   background: url('https://res.cloudinary.com/dwhkjr77b/image/upload/f_auto,q_70,w_1000/v1749931587/Background_lcttlj.jpg') no-repeat center center;
   background-size: cover;
