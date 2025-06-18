@@ -4,7 +4,7 @@ html, body {
   padding: 0;
   max-width: 100%;
   overflow-x: hidden;
-  font-family: 'Segoe UI', sans-serif;
+  font-family: 'Quicksand', sans-serif;
   background: url('https://res.cloudinary.com/dwhkjr77b/image/upload/f_auto,q_70,w_1000/v1749931587/Background_lcttlj.jpg') no-repeat center center;
   background-size: cover;
   color: #fff;
@@ -19,32 +19,33 @@ html, body {
   to { opacity: 1; transform: translateY(0); }
 }
 
-/* ✅ حاوية المحتوى */
+/* ✅ الحاوية */
 .container {
   max-width: 600px;
   margin: auto;
   padding: 40px 20px;
   position: relative;
-  z-index: 2;
+  z-index: 1;
 }
 
-/* ✅ اللوجو */
+/* ✅ اللوجو مع شادو */
 .logo {
-  width: 120px;
-  height: 120px;
+  width: 160px;
+  height: 160px;
   border-radius: 50%;
   object-fit: cover;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
   border: 2px solid #fff;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
 }
 
 /* ✅ العنوان */
 h1 {
   margin-bottom: 40px;
-  font-size: 1.8rem;
+  font-size: 2rem;
 }
 
-/* ✅ الأزرار */
+/* ✅ الأزرار بشادو */
 .btn {
   display: block;
   width: 100%;
@@ -58,6 +59,7 @@ h1 {
   font-weight: bold;
   font-size: 1.1rem;
   transition: 0.3s;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
 }
 .btn:hover {
   transform: scale(1.03);
@@ -74,37 +76,8 @@ footer {
   color: #ddd;
 }
 
-/* ✅ موجات SVG */
-.background-waves {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 0;
-  pointer-events: none;
-}
-
-/* ✅ زخرفة شفافة */
-.pattern-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: url('https://www.transparenttextures.com/patterns/45-degree-fabric-light.png');
-  opacity: 0.2;
-  z-index: 1;
-  pointer-events: none;
-}
-
-/* 📱 تحسين الموبايل */
+/* 📱 تحسين للموبايل */
 @media (max-width: 768px) {
-  body {
-    background-attachment: scroll !important;
-    -webkit-overflow-scrolling: touch;
-  }
-
   h1 {
     font-size: 1.5rem;
   }
@@ -112,5 +85,10 @@ footer {
   .btn {
     font-size: 1rem;
     padding: 12px 0;
+  }
+
+  .logo {
+    width: 140px;
+    height: 140px;
   }
 }
