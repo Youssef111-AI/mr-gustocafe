@@ -1,35 +1,33 @@
-/* 🌍 إعدادات أساسية */
+/* styles.css */
 html, body {
-  height: 100vh;
-  overflow-x: hidden;
-  overflow-y: auto;
   margin: 0;
   padding: 0;
-  font-family: 'Quicksand', sans-serif;
-  background: url('https://res.cloudinary.com/dwhkjr77b/image/upload/f_auto,q_70,w_1000/v1749931587/Background_lcttlj.jpg') no-repeat center center;
-  background-size: cover;
-  color: #fff;
-  text-align: center;
-  animation: fadeIn 1s ease-in;
+  width: 100%;
+  height: 100%;
   position: relative;
+  overflow-x: hidden;
+  font-family: 'Quicksand', sans-serif;
+  text-align: center;
+  color: #fff;
 }
 
-/* ✅ أنيميشن */
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(20px); }
-  to { opacity: 1; transform: translateY(0); }
+/* خلفية متوافقة مع Safari */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  z-index: -1;
+  background: url('https://images.unsplash.com/photo-1498654200943-1088dd4438ae?auto=format&fit=crop&w=1920&q=80') no-repeat center center;
+  background-size: cover;
 }
 
-/* ✅ الحاوية */
 .container {
   max-width: 600px;
   margin: auto;
   padding: 40px 20px;
-  position: relative;
-  z-index: 1;
 }
 
-/* ✅ اللوجو مع شادو */
 .logo {
   width: 160px;
   height: 160px;
@@ -40,13 +38,12 @@ html, body {
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
 }
 
-/* ✅ العنوان */
 h1 {
   margin-bottom: 40px;
   font-size: 2rem;
+  text-shadow: 0 3px 6px rgba(0, 0, 0, 0.5);
 }
 
-/* ✅ الأزرار بشادو */
 .btn {
   display: block;
   width: 100%;
@@ -62,29 +59,26 @@ h1 {
   transition: 0.3s;
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
 }
+
 .btn:hover {
   transform: scale(1.03);
   background: #f0f0f0;
 }
+
 .btn i {
   margin-left: 10px;
 }
 
-/* ✅ الفوتر */
 footer {
   margin-top: 40px;
   font-size: 0.8rem;
   color: #ddd;
 }
 
-/* 📱 تحسين للموبايل */
 @media (max-width: 768px) {
   h1 {
-  margin-bottom: 40px;
-  font-size: 2rem;
-  text-shadow: 0 3px 6px rgba(0, 0, 0, 0.5); /* ✅ الشادو */
+    font-size: 1.5rem;
   }
-
 
   .btn {
     font-size: 1rem;
