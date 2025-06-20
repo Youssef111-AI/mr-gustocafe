@@ -5,6 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Mr Gusto Cafe</title>
 
+  <!-- ✅ Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-GNKJEYMM03"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-GNKJEYMM03');
+  </script>
+
   <!-- CSS -->
   <link rel="stylesheet" href="styles.css" />
 
@@ -21,17 +30,40 @@
     <img class="logo" src="https://res.cloudinary.com/dwhkjr77b/image/upload/v1750278140/image07_mk0dy1.jpg" alt="Mr Gusto Logo" />
     <h1>Welcome to Mr Gusto Cafe</h1>
 
-    <a class="btn" href="https://mr-gusto-menu.vercel.app/" target="_blank">Menu <i class="fas fa-mug-hot"></i></a>
-    <a class="btn" href="https://www.instagram.com/mr.gustocafe" target="_blank">Instagram <i class="fab fa-instagram"></i></a>
-    <a class="btn" href="https://www.facebook.com/share/1Lm1UTmyaH" target="_blank">Facebook <i class="fab fa-facebook"></i></a>
-    <a class="btn" href="https://wa.me/201091976787" target="_blank">WhatsApp <i class="fab fa-whatsapp"></i></a>
-    <a class="btn" href="https://www.tiktok.com/@mr.gusto.cafe" target="_blank">TikTok <i class="fab fa-tiktok"></i></a>
-    <a class="btn" href="https://maps.app.goo.gl/g49WRA3p1uoCMuug8" target="_blank">Location <i class="fas fa-map-marker-alt"></i></a>
+    <!-- ✅ أزرار مع تتبع الأحداث -->
+    <a class="btn" href="https://mr-gusto-menu.vercel.app/" target="_blank"
+       onclick="gtag('event', 'click', { event_category: 'Button', event_label: 'Menu' });">
+      Menu <i class="fas fa-mug-hot"></i>
+    </a>
+
+    <a class="btn" href="https://www.instagram.com/mr.gustocafe" target="_blank"
+       onclick="gtag('event', 'click', { event_category: 'Button', event_label: 'Instagram' });">
+      Instagram <i class="fab fa-instagram"></i>
+    </a>
+
+    <a class="btn" href="https://www.facebook.com/share/1Lm1UTmyaH" target="_blank"
+       onclick="gtag('event', 'click', { event_category: 'Button', event_label: 'Facebook' });">
+      Facebook <i class="fab fa-facebook"></i>
+    </a>
+
+    <a class="btn" href="https://wa.me/201091976787" target="_blank"
+       onclick="gtag('event', 'click', { event_category: 'Button', event_label: 'WhatsApp' });">
+      WhatsApp <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <a class="btn" href="https://www.tiktok.com/@mr.gusto.cafe" target="_blank"
+       onclick="gtag('event', 'click', { event_category: 'Button', event_label: 'TikTok' });">
+      TikTok <i class="fab fa-tiktok"></i>
+    </a>
+
+    <a class="btn" href="https://maps.app.goo.gl/g49WRA3p1uoCMuug8" target="_blank"
+       onclick="gtag('event', 'click', { event_category: 'Button', event_label: 'Location' });">
+      Location <i class="fas fa-map-marker-alt"></i>
+    </a>
 
     <footer>&copy; 2025 Mr Gusto Cafe</footer>
   </div>
 
-  <!-- سكربتات مستقبلية -->
   <script src="scripts.js"></script>
 </body>
 </html>
