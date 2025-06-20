@@ -17,7 +17,7 @@ body::before {
   top: 0; left: 0;
   width: 100%; height: 100%;
   z-index: -1;
-  background: url('https://images.unsplash.com/photo-1498654200943-1088dd4438ae?auto=format&fit=crop&w=1920&q=80') no-repeat center center;
+  background: url('https://res.cloudinary.com/dwhkjr77b/image/upload/v1749931587/Background_lcttlj.jpg') no-repeat center center;
   background-size: cover;
 }
 
