@@ -75,12 +75,14 @@ h1 {
 
 /* الفوتر */
 footer {
-  text-align: center;
-  padding: 10px;
+  width: 100%;
+  padding: 15px;
   color: white;
   font-size: 0.9rem;
-  background-color: rgba(0,0,0,0.4);
-  margin-top: 20px;
+  background-color: rgba(0, 0, 0, 0.6); /* أغمق شوية */
+  text-align: center;
+  position: relative;
+  z-index: 2;
 }
 
 /* استجابة الموبايل */
