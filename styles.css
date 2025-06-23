@@ -74,9 +74,12 @@ h1 {
 
 /* الفوتر */
 footer {
-  margin-top: 40px;
-  font-size: 0.8rem;
-  color: #ddd;
+  text-align: center;
+  padding: 10px;
+  color: white;
+  font-size: 0.9rem;
+  background-color: rgba(0,0,0,0.4);
+  margin-top: 20px;
 }
 
 /* استجابة الموبايل */
