@@ -10,7 +10,7 @@ html, body {
   color: #fff;
 }
 
-/* خلفية متوافقة مع Safari */
+/* خلفية */
 body::before {
   content: "";
   position: fixed;
@@ -50,11 +50,12 @@ h1 {
 .btn {
   display: block;
   width: 100%;
+  max-width: 350px; /* ✅ أقصى عرض للزر */
+  margin: 10px auto; /* ✅ توسيط الزر */
   background: #fff;
   color: #333;
   border: none;
   padding: 15px 0;
-  margin: 10px 0;
   border-radius: 30px;
   text-decoration: none;
   font-weight: bold;
@@ -96,5 +97,26 @@ footer {
   .logo {
     width: 140px;
     height: 140px;
+  }
+}
+
+/* تحسين المظهر على الشاشات الكبيرة */
+@media (min-width: 1200px) {
+  .container {
+    padding: 60px 20px;
+  }
+
+  .btn {
+    font-size: 1.2rem;
+    padding: 18px 0;
+  }
+
+  .logo {
+    width: 180px;
+    height: 180px;
+  }
+
+  h1 {
+    font-size: 2.3rem;
   }
 }
