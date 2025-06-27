@@ -10,6 +10,7 @@ html, body {
   color: #fff;
 }
 
+/* ✅ خلفية */
 body::before {
   content: "";
   position: fixed;
@@ -20,28 +21,44 @@ body::before {
   background-size: cover;
 }
 
+/* ✅ الحاوية */
 .container {
   max-width: 600px;
   margin: auto;
-  padding: 40px 20px;
+  padding-top: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
+/* ✅ بنر علوي */
+.top-banner {
+  width: 100%;
+  max-height: 180px;
+  object-fit: cover;
+  border-bottom: 3px solid #fff;
+  margin-bottom: 25px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+/* ✅ اللوجو */
 .logo {
-  width: 160px;
-  height: 160px;
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
   object-fit: cover;
-  margin-bottom: 25px;
+  margin-bottom: 35px;
   border: 2px solid #fff;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
 }
 
+/* ✅ العنوان */
 h1 {
   margin-bottom: 40px;
   font-size: 2rem;
   text-shadow: 0 3px 6px rgba(0, 0, 0, 0.5);
 }
 
+/* ✅ الأزرار */
 .btn {
   display: block;
   width: 100%;
@@ -68,6 +85,7 @@ h1 {
   margin-left: 10px;
 }
 
+/* ✅ الفوتر */
 footer {
   width: 100%;
   padding: 15px;
@@ -79,6 +97,7 @@ footer {
   z-index: 2;
 }
 
+/* ✅ استجابة للموبايل */
 @media (max-width: 768px) {
   h1 {
     font-size: 1.5rem;
@@ -90,11 +109,16 @@ footer {
   }
 
   .logo {
-    width: 140px;
-    height: 140px;
+    width: 160px;
+    height: 160px;
+  }
+
+  .top-banner {
+    max-height: 140px;
   }
 }
 
+/* ✅ تحسين الشاشات الكبيرة */
 @media (min-width: 1200px) {
   .container {
     padding: 60px 20px;
@@ -106,8 +130,8 @@ footer {
   }
 
   .logo {
-    width: 180px;
-    height: 180px;
+    width: 220px;
+    height: 220px;
   }
 
   h1 {
