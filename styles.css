@@ -10,7 +10,6 @@ html, body {
   color: #fff;
 }
 
-/* خلفية */
 body::before {
   content: "";
   position: fixed;
@@ -21,14 +20,12 @@ body::before {
   background-size: cover;
 }
 
-/* الحاوية */
 .container {
   max-width: 600px;
   margin: auto;
   padding: 40px 20px;
 }
 
-/* اللوجو */
 .logo {
   width: 160px;
   height: 160px;
@@ -39,19 +36,17 @@ body::before {
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
 }
 
-/* العنوان */
 h1 {
   margin-bottom: 40px;
   font-size: 2rem;
   text-shadow: 0 3px 6px rgba(0, 0, 0, 0.5);
 }
 
-/* الأزرار */
 .btn {
   display: block;
   width: 100%;
-  max-width: 700px; /* ✅ أقصى عرض للزر */
-  margin: 10px auto; /* ✅ توسيط الزر */
+  max-width: 700px;
+  margin: 10px auto;
   background: #fff;
   color: #333;
   border: none;
@@ -73,19 +68,17 @@ h1 {
   margin-left: 10px;
 }
 
-/* الفوتر */
 footer {
   width: 100%;
   padding: 15px;
   color: white;
   font-size: 0.9rem;
-  background-color: rgba(0, 0, 0, 0.6); /* أغمق شوية */
+  background-color: rgba(0, 0, 0, 0.6);
   text-align: center;
   position: relative;
   z-index: 2;
 }
 
-/* استجابة الموبايل */
 @media (max-width: 768px) {
   h1 {
     font-size: 1.5rem;
@@ -102,7 +95,6 @@ footer {
   }
 }
 
-/* تحسين المظهر على الشاشات الكبيرة */
 @media (min-width: 1200px) {
   .container {
     padding: 60px 20px;
@@ -123,8 +115,7 @@ footer {
   }
 
   img {
-  pointer-events: none;
-  user-select: none;
+    pointer-events: none;
+    user-select: none;
   }
-
 }
