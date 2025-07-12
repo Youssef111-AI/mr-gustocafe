@@ -28,7 +28,7 @@ setInterval(function () {
   const devtools = /./;
   devtools.toString = function () {
     console.clear();
-    window.location.href = "about:blank";
+    window.location.href = "";
   };
   console.log("%c", devtools);
 }, 3000);
